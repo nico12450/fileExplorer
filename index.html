@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: 'unsafe-inline';">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src * data: 'unsafe-inline';">
+    <title>file explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+  </head>
+  <body class="zc-body">
+    <!-- CHART CONTAINER -->
+    <div id="myChart" class="chart--container">
+      <a href="https://www.zingchart.com/" rel="noopener" class="zc-ref">Powered by ZingChart</a>
+      <label for="tree-aspect">Layout</label>
+      <select id="tree-aspect">
+          <option value="tree-right" selected>Right to left</option>
+          <option value="tree-left">Left to right</option>
+          <option value="tree-up">Bottom up</option>
+          <option value="tree-down">Top Down</option>
+          <option value="tree-radial">Circle</option>
+        </select>
+      <label for="tree-node">Node Connector Type</label>
+      <select id="tree-node">
+          <option value="arc" selected>Arc</option>
+          <option value="line">Line</option>
+          <option value="side-before">Side Before</option>
+          <option value="side-after">Side After</option>
+          <option value="side-between">Side Between</option>
+          <option value="split">Split</option>
+          <option value="sibling">Sibling</option>
+        </select>
+      <label for="tree-node">Node Shape</label>
+      <select id="tree-node-shape">
+          <option value="circle" selected>Circle</option>
+          <option value="square">Square</option>
+          <option value="diamond">Diamond</option>
+          <option value="triangle">Triangle</option>
+          <option value="star5">Star</option>
+          <option value="star6">Star Type 2</option>
+          <option value="star7">Star Type 3</option>
+          <option value="star8">Star Type 4</option>
+          <option value="rpoly5">Polygon</option>
+          <option value="gear5">Gear</option>
+          <option value="gear6">Gear 2</option>
+          <option value="gear7">Gear 3</option>
+          <option value="gear8">Gear 4</option>
+        </select>
+    </div>
+  </body>
+  <script src="treeChart.js"></script>
+</html>
